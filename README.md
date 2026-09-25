@@ -119,6 +119,40 @@ http://127.0.0.1:5000
 
 ---
 
+## 🔬 ML Workflow
+
+```mermaid
+flowchart TD
+    A[Student Mental Health Dataset] --> B[Data Preprocessing]
+    B --> C[Data Cleaning]
+    C --> D[Feature Selection]
+    D --> E[Exploratory Data Analysis]
+    E --> F[Train ML Model]
+    F --> G[Model Evaluation]
+    G --> H[Save Trained Model]
+
+    H --> I[Flask Web Application]
+    I --> J[User Enters Information]
+    J --> K[Input Validation & Preprocessing]
+    K --> L[Load Trained Model]
+    L --> M[Generate Prediction]
+    M --> N[Display Result]
+```
+
+### 🔄 Application Flow
+
+```mermaid
+flowchart LR
+    A[User] --> B[Web Interface]
+    B --> C[Input Data]
+    C --> D[Flask Backend]
+    D --> E[Preprocessing]
+    E --> F[ML Model]
+    F --> G[Prediction]
+    G --> H[Result]
+    H --> B
+```
+
 ## ⚠️ Disclaimer
 
 This project is developed for **educational and research purposes**. Its predictions should not be considered a medical diagnosis or a substitute for professional mental-health advice.
